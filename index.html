@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<script type='text/javascript' src='randomColor.js'></script>
+    </head>
+	
+	<!-- Styles -->
+	<style>	
+		#color  div label{
+			font-weight: bold;
+		}
+		
+		.error, .errorNumberColor{
+			display: none;
+			margin-left: 10px;
+		}		
+		
+		.error_show{
+			color: red;
+			margin-left: 10px;
+		}
+		
+		input.invalid, textarea.invalid{
+			border: 2px solid red;
+		}
+		
+		input.valid, textarea.valid{
+			border: 2px solid green;
+		}
+	</style>
+	
+    <body>
+		<div>
+			<h1>Javascript Challange<h1>
+		</div>
+		<div id="colorParagraph">
+			<p>I’d like to color a paragraph of text into random colors (not ordered in a particular way). 
+				List of colors needs to be entered by the user with appropriate input validation and stored in array. 
+				Two neighboring letters should not have the same color.</p>
+		</div>
+		<form id="color" method="post" action="">
+			<!-- Message -->
+			<div>
+				<label for="color_text">Insert at least 2 colors (delimiters comma or semicolon):</label>
+			</div>	
+			<div>
+				<textarea id="color_text" name="text" rows="4" cols="50" ></textarea>
+				<span class="error">Colors are not valid</span>			
+			</div>					
+			<!-- Submit Button -->
+			<br />
+			<div id="contact_submit">				
+				<button type="button">Submit</button>
+			</div>
+		</form>
+	</body>
+</html>
+
+      
+    
+
